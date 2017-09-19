@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 var _moduleSlider = (function(){
-	var slider = $('.b-slider__list');
+	var slider = $('.b-top-slider__list');
 
 	return {
 		action: function(){
