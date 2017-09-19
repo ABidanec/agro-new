@@ -1,0 +1,38 @@
+.b-top-slider{
+	margin: 0 0 2em 0;
+}
+
+.b-top-slider__list{
+	list-style: none;
+}
+	.b-top-slider__item{
+		position: relative;
+		margin-left: 0;
+	}
+		.b-top-slider__img{
+			width: 100%;
+			vertical-align: bottom;
+		}
+
+		.b-top-slider__text{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 2em 0;
+			color: #fff;
+			font-size: 1.1em;
+			background: rgba(0,0,0,.5);
+		}
+
+			.b-top-slider__link{
+				background: $b-dgray-c;
+				color: #fff;
+				@include transition($time);
+
+				&:hover{
+					background: $b-orange-c;
+					color: $b-dgray-c;
+					@include transition($time);
+				}
+			}
+

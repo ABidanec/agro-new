@@ -1,0 +1,53 @@
+.b-footer{
+	position: relative;
+	background: $b-gray-c;
+	color: #fff;
+}
+	.b-f-addres__list{
+		list-style: none;
+	}
+		.b-f-addres__item{
+			display: inline-block;
+			vertical-align: top;
+			width: 21%;
+			padding: 1%;
+			margin-left: 0;
+
+			p{
+				text-indent: 0;
+			}
+		}
+
+			.b-f-addres__head{
+				font-family: $driod;
+				font-size: 3em;
+				text-align: left;
+				font-weight: 100;
+				color: #fff;
+
+			}
+
+			.b-f-addres-sub__list{
+				list-style: none;
+			}
+				.b-f-addres-sub__item{
+					margin: 0 0 0.3em 0;
+				}				
+					.b-f-addres-sub__link{
+						text-decoration: none;
+						color: $b-font-c;
+						@include transition($time);
+
+						&:hover{
+							color: $b-orange-c;
+							@include transition($time);
+						}
+					}
+
+	.b-footer__copiryght{
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		background: #000;
+		padding: 1.5em 0;
+	}

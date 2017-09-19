@@ -1,0 +1,133 @@
+.clearfix{
+	&:after,
+	&:before{
+		content: "";
+		display: table;
+	}
+
+	&:after{
+		clear: both;
+	}
+
+	zoom: 1;
+}
+
+.l-center{
+	width: 95%;
+	margin: 0 auto;
+}
+
+body{
+	font-family: $b-font-f, sans-serif;
+	font-size: $b-font-s;
+	color: $b-font-c;
+}
+
+html, body{
+	height: 100%;
+}
+
+.l-wrapper{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+
+	&:after{
+		position: static;
+		content: " ";
+		display: block;
+		height: $b-footer-h;
+		z-index:1
+	}
+}
+
+.b-footer{
+	position: relative;
+	height: $b-footer-h;
+	margin: -$b-footer-h 0 0 0;
+	zoom: 1;
+	z-index: 100;
+}
+
+
+p{
+	margin: 0 0 1em 0;
+	line-height: 1.2em;
+	text-indent: 1em;
+}
+
+a{
+	color: $b-a-c;
+	@include transition($time);
+
+	&:hover{
+		color: $b-a-c_h;
+		@include transition($time);
+	}
+}
+
+ul{
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+li{
+	margin-left: 2em;
+}
+
+input, textarea{
+	outline: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	text-align: center;
+	color: $b-dgray-c;
+}
+
+.btn{
+	display: block;
+	float: left;
+	padding: 1em 2em;;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover{
+		color: #000;
+	}
+}
+
+	.l-section-head{
+		position: relative;
+		margin: 2% 7%;
+
+	}
+		.b-section-head{
+			text-transform: uppercase;
+			font-family: $driod;
+			font-size: 3em;
+			font-weight: 400;
+			margin:-0.5em 0 0;
+
+
+			span{
+				display: inline-block;
+				padding: 0 1.3em;
+			}
+		}
+
+	.l-author{
+		position: relative;
+		margin: 5% 15%;
+	}
+		.b-author{
+			font-size: 1.5em;
+			font-weight: 400;
+			margin:-0.6em 0 0;
+			text-align: center;
+
+			span{
+				display: inline-block;
+				padding: 0 1.3em;
+			}
+		}

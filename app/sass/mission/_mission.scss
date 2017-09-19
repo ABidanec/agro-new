@@ -1,0 +1,50 @@
+.b-mission{
+	padding: 2em 0;
+}
+	.l-mission__head{
+		border-top: 1px solid $b-dgray-c;
+	}
+		.b-mission__head{
+			span{
+				background: #fff;
+			}
+		}
+	.l-cog{
+		position: relative;
+		background: $b-orange-c;
+		width: 9.5625em;
+		height: 9.5625em;
+		@include border-radius(50%, 50%, 50%, 50%);
+		margin: 3em auto;
+		@include transition($time);
+
+		.fa{
+			position: absolute;
+		    top: 10%;
+		    left: 14%;
+		    font-size: 8em;
+		    color: #fff;
+		    @include transition($time);
+		}
+
+		&:hover{
+			background: #fff;
+			@include transition($time);
+
+			.fa{
+				color: $b-orange-c;
+		    	@include transition($time);
+			}
+		}
+	}
+
+	.l-mission__author{
+		border-top: 1px solid $b-orange-c;
+	}
+		.b-mission__author{
+			color: $b-orange-c;
+			font-style: italic;
+			span{
+				background: #fff;
+			}
+		}

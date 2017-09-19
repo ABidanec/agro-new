@@ -1,0 +1,48 @@
+.b-services{
+	padding: 2em 0;
+	background: $b-gray-c;
+}
+
+
+
+	.l-services__head{
+		border-top: 1px solid #fff;
+	}
+	
+		.b-services__head{
+			color: #fff;
+
+			span{
+				background: $b-gray-c;
+			}
+		}
+
+	.b-services__slider{
+		width: 50%;
+		margin: 0 auto;
+	}
+		.b-services__list{
+			list-style: none;
+		}
+			.b-services__item{
+				width: 100%;
+			}
+				.b-services__img{
+					width: 100%;
+					margin: 0 0 1% 0;
+				}
+				.b-services__desc{
+					text-align: center;
+					line-height: 1.5;
+				}
+
+				.b-services__link{
+					background: $b-font-c;
+					@include transition($time);
+
+					&:hover{
+						color: $b-dgray-c;
+						background: $b-orange-c;
+						@include transition($time);
+					}
+				}
