@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 100; }
   .b-header-sub-menu__list .b-header-sub-menu__list {
     position: absolute;
-    padding: 0 0 0 1em;
+    padding: 0 0 0 0.1em;
     left: 100%;
     top: 1%; }
 
@@ -283,6 +283,9 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+
+.slicknav_menu {
+  display: none; }
 
 .b-footer-soc__list {
   list-style: none;

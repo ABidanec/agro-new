@@ -132,7 +132,7 @@
 				
 				.b-header-sub-menu__list{
 					position: absolute;
-					padding: 0 0 0 1em;
+					padding: 0 0 0 0.1em;
 					left: 100%;
 					top: 1%;
 				}
@@ -174,3 +174,6 @@
 						@include transition($time);
 					}
 				}
+.slicknav_menu{
+	display: none;
+}
