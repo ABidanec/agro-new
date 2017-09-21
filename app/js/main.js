@@ -5,17 +5,39 @@ $(document).ready(function(){
 });
 
 var _moduleSlider = (function(){
-	var slider = $('.b-top-slider__list');
+	var _slider = $('.b-top-slider__list'),
+		_smallSlider = $('.b-services__list');
 
 	return {
 		action: function(){
-			slider.slick({
+			_slider.slick({
 				dots: true,
 				autoplay: true,
 				autoplaySpeed: 3000,
 				fade: true,
 				pauseOnHover: true,
 				adaptiveHeight: true,
+				arrows: false,
+				draggable: true,
+				responsive: [
+					{
+				      breakpoint: 600,
+				      settings: {
+				        dots: false
+				      }
+				    }
+				]
+			});
+
+			_smallSlider.slick({
+				dots: true,
+				autoplay: true,
+				autoplaySpeed: 3500,
+				fade: true,
+				pauseOnHover: true,
+				adaptiveHeight: false,
+				arrows: false,
+				draggable: true,
 				responsive: [
 					{
 				      breakpoint: 600,
@@ -33,19 +55,20 @@ var _moduleToTop = (function(){
 
 	var scroll = $(".b-top-scroll"),
 		top = 300,
-		delay = 1800;
+		delay = 800;
 	return {
 		action: function(){
-			$(window).scroll(function() {
- 				if($(this).scrollTop() != top) {
-					scroll.fadeIn("slow");
+			$(window).on("scroll",function() {
+ 				if($(window).scrollTop() >= top) {
+					scroll.fadeIn();
 				} else {
-					scroll.fadeOut("slow");
+					scroll.fadeOut();
 				}
 			});
-			scroll.click(function() {
+			scroll.on("click",function(e) {
+				e.preventDefault();
 				$('body,html').animate(
-					{"scrollTop" : "0"},
+					{scrollTop:0},
 					delay
 				);
 			});
