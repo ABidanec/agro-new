@@ -1,0 +1,62 @@
+.b-about{
+	padding: 2em 0;
+}
+	.b-about__list{
+		list-style: none;
+	}
+		.b-about__item{
+			display: inline-block;
+			vertical-align: top;
+			width: 28%;
+			padding: 1%;
+			margin: 0 3% 3% 0;
+
+			&:first-child,
+			&:nth-child(3n+4){
+				margin: 0 0 3% 0;
+			}
+		}
+
+		.b-about__head{
+			@extend .b-f-addres__head;
+			color: #333;
+			text-align: center;
+		}
+
+		.b-about__desc{
+
+			img{
+				width: 100%;
+				margin: 0 0 3% 0;
+			}
+		}
+
+		.b-about__sub-head{
+			color: $b-orange-c;
+			text-align: center;
+			font-weight: 400;
+		}
+
+		.b-advantages__list{
+			list-style: none;
+		}
+			.b-advantages__item{
+				text-align: center;
+				margin: 0 0 3% 0;
+			}
+				.b-advantages__link{
+					color: $b-dgray-c;
+					font-style: italic;
+					text-decoration: none;
+
+					@include transition($time);
+
+					&:hover{
+						color: $b-orange-c;
+						@include transition($time);
+					}
+				}
+
+		.b-about__btn{
+			@extend .b-production__link;
+		}
