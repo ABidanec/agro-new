@@ -2,6 +2,7 @@ $(document).ready(function(){
 	_moduleSlider.action();
 	_moduleToTop.action();
 	_moduleSlickMenu.action();
+	_moduleWow.action();
 });
 
 var _moduleSlider = (function(){
@@ -50,6 +51,7 @@ var _moduleSlider = (function(){
 		}
 	}
 })();
+// _moduleSlider
 
 var _moduleToTop = (function(){
 
@@ -58,6 +60,7 @@ var _moduleToTop = (function(){
 		delay = 800;
 	return {
 		action: function(){
+			scroll.fadeOut();
 			$(window).on("scroll",function() {
  				if($(window).scrollTop() >= top) {
 					scroll.fadeIn();
@@ -75,6 +78,7 @@ var _moduleToTop = (function(){
 		}
 	}
 })();
+// _moduleToTop
 
 var _moduleSlickMenu = (function(){
 	var _topMenu = $('.b-header-menu__list'),
@@ -91,3 +95,13 @@ var _moduleSlickMenu = (function(){
 		}
 	}
 })();
+
+var _moduleWow = (function(){
+
+	return{
+		action: function(){
+			new WOW().init();
+		}
+	}
+})();
+
