@@ -21,6 +21,11 @@
 				font-size: 7em;
 			}
 		}
+
+		img{
+			width: 100%;
+			margin: 0 0 1em 0;
+		}
 	}
 	.b-content__features{
 		h2{
@@ -74,4 +79,132 @@
 					}
 				}
 
+/* b-prodiction-3 */
+.b-prodiction-3__list{
+	list-style: none;
+}
+	.b-prodiction-3__item{
+		display: inline-block;
+		width: 28%;
+		padding: 1%;
+		margin: 0 0 3% 3%;
+
+		&:first-child,
+		&:nth-child(3n+4){
+			margin: 0 0 3% 0;
+		}
+
+		p{
+			text-align: justify;
+		}
+	}
+	.b-prodiction-3__img{
+		width: 100%;
+	}
+
+	.b-prodiction-3__head-item{
+		text-transform: uppercase;
+		color: $b-orange-c;
+		padding: 1em 0 0;
+		border-top: 2px solid $b-dgray-c;
+	}
+/* end b-prodiction-3 */
+
+/* blog */
+.b-blog__head{
+	font-family: $driod;
+	font-size: 3em;
+	font-weight: 400;
+
+}
+.b-percent{
+	float: right;
+	width: 30%;
+	z-index: 10;
+
+	img{
+		width: 100%;
+	}
+
+	.b-blog__head{
+		margin: 0.56em 0;
+	}
+}
+	.b-percent__list{
+		list-style: none;
+	}
+		.b-percent__item{
+			margin: 0 0 4% 0;
+		}
+			.b-blog__date{
+				margin: 1em 0;
+			}
+
+.b-blog{
+	padding: 0 33% 0 0;
+}
+	.b-blog__list{
+		list-style: none;
+	}
+		.b-blog__item{
+			overflow: hidden;
+			margin: 0 0 3% 0;
+			text-align: justify;
+		}
+		.b-blog__img{
+			width: 100%;
+		}
+
+		
+/* end blog */
+
+/* contact */
+.b-address__list{
+	list-style: none;
+}
+	.b-address__item{
+		margin: 0 0 5% 0;
+
+		p{
+			text-align: center;
+			line-height: 0.4em;
+		}
+	}
+		.b-address__head-item{
+			text-transform: uppercase;
+			color: $b-orange-c;
+			font-weight: 400;
+		}
+.b-contact__input,
+.b-contact__textarea{
+	padding: 2%;
+	width: 96%;
+	color: $b-font-c;
+	@include border-radius(5px, 5px, 5px, 5px);
+	border: 1px solid $b-font-c;
+	margin: 0 0 5% 0;
+}
+.b-contact__submit{
+	border: none;
+}
+/* end contact */
+
+/* inner */
+.b-content__img-big{
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+	.b-content__img-left,
+	.b-content__img-right{
+		width: 25%;
+	}
+	.b-content__img-left{
+		float: left;
+		margin: 0 2% 2% 0;
+	}
+	.b-content__img-right{
+		float: right;
+		margin: 0 0 2% 2%;
+	}
+/* end inner */
 
